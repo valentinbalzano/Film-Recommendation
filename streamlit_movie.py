@@ -17,7 +17,10 @@ st.image('./Capture d’écran 2021-11-19 à 10.59.57.png') #/Users/valentinba
 st.title('Moteur de recommandation de films en ligne')
 
 # Download Data
-df_final = pd.read_csv('./df_final.csv', index_col = False)#/Users/valentinbalzano/Desktop/Support/df_final.csv
+df_final = pd.read_csv('./df_final.csv')#/Users/valentinbalzano/Desktop/Support/df_final.csv
+
+#Drop Columns
+df_final.drop(columns = ‘Unnamed: 0’, inplace = True)
 
 # Modify title's column
 df_final.rename(columns={'title_y': 'Films', 'primaryName': 'Réalisateurs', 'startYear': 'Sortie', 'genres_y': 'Catégories', 'averageRating_y': 'Notes', 'numVotes_y': 'Votes'}, inplace=True)
