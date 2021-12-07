@@ -10,14 +10,14 @@ from PIL import Image
 import time
 
 # Logo webapp
-st.image('/Users/valentinbalzano/Documents/myproject/Capture d’écran 2021-11-19 à 10.59.57.png')
+st.image('./Capture d’écran 2021-11-19 à 10.59.57.png') #/Users/valentinbalzano/Documents/myproject/Capture d’écran 2021-11-19 à 10.59.57.png
 
 
 # Title's Webapp
 st.title('Moteur de recommandation de films en ligne')
 
 # Download Data
-df_final = pd.read_pickle('/Users/valentinbalzano/Desktop/Support/df_final.pkl')
+df_final = pd.read_pickle('./df_final.pkl')#/Users/valentinbalzano/Desktop/Support/df_final.pkl
 
 # Modify title's column
 df_final.rename(columns={'title_y': 'Films', 'primaryName': 'Réalisateurs', 'startYear': 'Sortie', 'genres_y': 'Catégories', 'averageRating_y': 'Notes', 'numVotes_y': 'Votes'}, inplace=True)
