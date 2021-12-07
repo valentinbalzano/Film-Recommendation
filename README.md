@@ -1,6 +1,6 @@
 # Film-Recommendation
 
-This is our 2nd project in the Wild Code School.
+This is our 2nd project in the Wild Code School, in collaboration with Augustin Chabannes (https://github.com/Augustin-Chab) and Giovanni Jolard (https://github.com/GiovanniJolard)
 
 - Film database analysis (IMDB).
 
