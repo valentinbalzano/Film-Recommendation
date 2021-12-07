@@ -20,7 +20,7 @@ st.title('Moteur de recommandation de films en ligne')
 df_final = pd.read_csv('./df_final.csv')#/Users/valentinbalzano/Desktop/Support/df_final.csv
 
 #Drop Columns
-df_final.drop(columns = ‘Unnamed: 0’, inplace = True)
+df_final.drop(columns = "Unnamed: 0", inplace = True)
 
 # Modify title's column
 df_final.rename(columns={'title_y': 'Films', 'primaryName': 'Réalisateurs', 'startYear': 'Sortie', 'genres_y': 'Catégories', 'averageRating_y': 'Notes', 'numVotes_y': 'Votes'}, inplace=True)
